@@ -8,7 +8,5 @@ RUN npm install
 
 COPY nodemon.json .
 
-# COPY src src
-
 EXPOSE 3000
-CMD ["npm", "run", "dev"]
+CMD ["npx", "nodemon"]
