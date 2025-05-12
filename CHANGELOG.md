@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.3](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.2...v1.0.3) (2025-05-12)
+
+
+### Features
+
+* **Models:** add AsesorDate model ([48dd408](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/48dd4080ec923fcbdb0d870e29f35ad5d61d3ba3))
+* **Models:** add AsesorDate model to index.js ([4e253bf](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/4e253bf74bbc543fd965cf7f7cd44f84238d8c6c))
+* **Models:** add Relationships between models in server.js ([d43c2f1](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/d43c2f1c3b6f92f2687df7eb9d60d2ba32976287))
+* **Models:** add Students model ([878fc9c](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/878fc9c6e7f9e54e27d59d77115907cd71372cfb))
+* **Models:** add Students model to index.js ([0b748d1](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/0b748d1bba760300bcdd7185b254ca8932a12c96))
+* **Models:** add User model ([dcd6f18](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/dcd6f18336c4bae945d3ecb96c1a94c7f9895050))
+* **Models:** add User model to index.js ([6289fff](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/6289fffa30026668ef32389663f4687766f87660))
+
+
+### Bug Fixes
+
+* **github:** change base for merge for pull-request ([9e505c0](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/9e505c0ff25e7ca320f28981421baf8477817973))
+* **github:** change merge for pull-request ([fc3b1ec](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/fc3b1ece8698f19a524cf80dd02c47b674001686))
+
 ## [1.0.2](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.1...v1.0.2) (2025-05-12)
 
 
