@@ -31,7 +31,7 @@ export const login = async (req, res , next) => {
             return res.json({"login": false, "message": "Incorrect Password"})
         }
         console.log(nombre)
-        res.cookie('token', nombre);
+        res.cookie('token', nombre, {httpOnly: true,secure: true, sameSite: 'None'});
         return res.json({ "login": true});
     } catch (error) {
         next(error)
