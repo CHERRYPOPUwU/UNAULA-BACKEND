@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.0.6](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.5...v1.0.6) (2025-05-12)
+
+
+### Features
+
+* **Routes:** Add All routes in index.js ([bc0585e](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/bc0585ecca0d6d7a2ca60aa11508c0c36c402546))
+* **Routes:** Add carrera routes with methods (getAllCarreras,getCarrera,createCarrera,updateCarrera) ([8ada5a1](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/8ada5a1d7329a560b85d4bd46ee0734771510720))
+* **Routes:** Add Consulting Date routes with methods (getAllFechaAsesoria,createFechaAsesoria,updateFechaAsesoria) ([265ab69](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/265ab698fbec711a5c07db132be7613dea9e3148))
+* **Routes:** Add Informes routes with methods (generateProjectReport) ([41f87b1](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/41f87b1b9ea2582171d41d00ba3ea96c293cc67f))
+* **Routes:** Add Projects routes with methods (getAllProjects,getAllIncompletProjects,getProject,createProject,updateProject) ([485d3a5](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/485d3a584fd46f64940339b35830287c3da47a17))
+* **Routes:** Add Students routes with methods (getAllEstudiantes,getEstudiantes,createEstudiante,updateEstudiante) ([bcaa0b4](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/bcaa0b4ebff3f81f3fe9f0e77f7c0b0e38ea3c64))
+* **Routes:** Add User routes with methods (login,createUser) ([91efcd5](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/91efcd58f04d85af0f41961d6e5147ede96c11c8))
+* **Routes:** Add Users routes with methods (getAllAsesores,getAsesor,createAsesor,updateAsesor) ([b7e01c2](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/b7e01c24837b422d6d6f1cf12cf1e778f694ab04))
+* **Server:** Add All Routes in server.js ([c09e183](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/c09e1833e2ab4256121dea03dd513fe115dacb09))
+
+
+### Bug Fixes
+
+* **Text:** change name of the db for connections ([6dbaf01](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/6dbaf01a577679558073d0fd3099129496e92aca))
+
 ## [1.0.5](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.4...v1.0.5) (2025-05-12)
 
 
