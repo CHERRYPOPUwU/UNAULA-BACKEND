@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.1](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.0...v1.0.1) (2025-05-12)
+
+
+### Features
+
+* **Models:** add index.js for all models ([cdff567](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/cdff567e46212c83ee9d64ef471b38cfdbd9a569))
+* **Models:** add Model carreras ([1887203](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/1887203c8c1c21247322493bed8f4c458a6f2f4c))
+* **Server:** Add sequelize to Synchronize the models with the DB ([1a94eb5](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/1a94eb5cc93e6f4381076e50335f4b392a2701e6))
+
+
+### Bug Fixes
+
+* **github:** change variable for merge ([43d8759](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/43d8759bc12f6936fb4c30923944ae7b001bfacb))
+
 ## 1.0.0 (2025-05-12)
 
 
