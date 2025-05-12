@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.2](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.1...v1.0.2) (2025-05-12)
+
+
+### Features
+
+* **github:** Add permissions on worflow deploy ([0d74027](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/0d74027f10e953b63ba244d289649ae30d2f1437))
+* **Models:** add Asesores model ([383a9d6](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/383a9d67c4cc3e5d15b63df0015ef1b077495068))
+* **Models:** add Projects  model to index.js ([57e70d6](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/57e70d69cf549ef728fea21a11175e09398b848c))
+* **Models:** add projects model ([5b592c8](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/5b592c8c5169c309df24f13f6a1bc538cc774ce1))
+
 ## [1.0.1](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.0...v1.0.1) (2025-05-12)
 
 
