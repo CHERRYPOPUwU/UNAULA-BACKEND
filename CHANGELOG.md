@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.7...v1.0.8) (2025-05-12)
+
+
+### Bug Fixes
+
+* **Controller:** Add settings for Cookies in the login ([2c35350](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/2c35350642fbc15b861eeb961d272698cf542d49))
+
 ## [1.0.7](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.6...v1.0.7) (2025-05-12)
 
 
