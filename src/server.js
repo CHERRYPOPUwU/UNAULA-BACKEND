@@ -17,8 +17,16 @@ class Server {
     }
 
     middlewares(){
+        const allowedOrigins = process.env.CORS_ORIGINS?.split(',') || [];
         this.app.use(cors({
-            origin: 'http://localhost:5173',
+            origin: function (origin, callback) {
+                if (!origin) return callback(null, true);
+                if (allowedOrigins.includes(origin)) {
+                    return callback(null, true);
+                } else {
+                    return callback(new Error('Not allowed by CORS'));
+                }
+            },
             credentials: true
         }))
         this.app.use(json());
