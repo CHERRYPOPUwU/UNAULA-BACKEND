@@ -1,4 +1,4 @@
-\connect UNAULA;
+\connect unaula;
 
 -- Insertar datos en la tabla de Carreras
 INSERT INTO carreras (nombre, semestres, facultad)
@@ -38,6 +38,6 @@ VALUES
 -- Insertar datos en la tabla de usuarios
 INSERT INTO usuarios (nombre, documento, password, rol)
 VALUES 
-    ('Jose Daniel',1027540540,'1027540540', 'Administrativo'),cls
+    ('Jose Daniel',1027540540,'1027540540', 'Administrativo'),
     ('Pepito Perez',104564304,'104564304', 'Estudiante'),
     ('Juanito Lopez',102890100,'102890100', 'Asesor');

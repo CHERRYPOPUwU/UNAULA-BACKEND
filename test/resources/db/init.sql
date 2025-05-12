@@ -1,4 +1,4 @@
-\connect UNAULA;
+\connect unaula;
 
 -- Crear tabla de Carreras
 CREATE TABLE carreras(

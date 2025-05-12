@@ -4,6 +4,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import sequelize from './database/database.js';
 import { Carreras, Asesores, Proyectos, Estudiantes, FechaAsesoria, Usuario } from './models/index.js';
+import {carreraRouter, asesoresRoutes, proyectosRoutes, estudiantesRouter, fechaAsesoriaRouter, informesRouter, usuariosRouter}  from './routes/index.js';
 
 
 
@@ -12,6 +13,7 @@ class Server {
         this.app = express();
         this.middlewares();
         this.connectDB();
+        this.routes();
     }
 
     middlewares(){
@@ -24,6 +26,21 @@ class Server {
         this.app.use(cookieParser())
     }
 
+    routes(){
+        this.app.use("/api/carreras", carreraRouter);
+        this.app.use("/api/asesores", asesoresRoutes);
+        this.app.use("/api/proyectos", proyectosRoutes);
+        this.app.use("/api/estudiantes", estudiantesRouter);
+        this.app.use("/api/fechaAsesoria", fechaAsesoriaRouter);
+        this.app.use("/api/informes", informesRouter);
+        this.app.use("/api/usuarios", usuariosRouter);
+
+        this.app.use((err, req, res, next) => { 
+            console.log("This is the current error: ", err);
+            return res.status(err.status || 500).json({ message: err.message || "Internal Server Error" });
+        });
+    }
+
     async connectDB(){
         try {
             await sequelize.authenticate()
@@ -32,7 +49,7 @@ class Server {
             //Synchronize the models with the DB
             sequelize.sync();
 
-            //Relationships between models
+            //Relaciones entre los modelos
             Proyectos.belongsTo(Asesores, { foreignKey: "id_asesor"});
             Asesores.hasMany(Proyectos, { foreignKey: "id_asesor" });
             Estudiantes.belongsTo(Proyectos, {foreignKey: "id_proyecto"});
