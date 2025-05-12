@@ -1,0 +1,49 @@
+name: CI/CD Backend
+
+on:
+  push:
+    branches:
+      - developer
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Instalar dependencias
+        run: npm install
+
+      # - name: Ejecutar pruebas ## Todavia no hay pruebas
+      #   run: npm test
+
+  merge:
+    needs: test
+    runs-on: ubuntu-latest
+    if: success()
+
+    steps:
+      - name: Merge de developer a main
+        uses: devmasx/merge-branch@v1.3.0
+        with:
+          type: now
+          from_branch: developer
+          target_branch: main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+  deploy:
+    needs: merge
+    runs-on: ubuntu-latest
+    if: success()
+
+    steps:
+      - name: Hacer deploy a Render
+        run: curl -X GET ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
