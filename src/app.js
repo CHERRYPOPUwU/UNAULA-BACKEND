@@ -1,4 +1,4 @@
-import 'dotenv/config'; // Cargar variables de entorno
-import Server from './server.js';// Llamada al Servidor creado en server.js
+import 'dotenv/config'; // Load environment variables
+import Server from './server.js';// Call to the Server created in server.js
 const server = new Server();
-server.listen(); // Lanzamiento del Servidor
+server.listen(); // Launching the Server
