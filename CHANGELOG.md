@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.4](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.3...v1.0.4) (2025-05-12)
+
+
+### Features
+
+* **Schema:** Add asesor schema ([a8be4a0](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/a8be4a00be8236b130f9461f0d3e67014f86d996))
+* **Schema:** Add career schema ([6192261](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/61922612eae90df10bae038411a8a2335e3100c7))
+* **Schema:** Add DateAssessment schema ([0a434ae](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/0a434aecd13bc7c0c1806934c45ff847e5f193b3))
+* **Schema:** Add Project schema ([8659543](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/8659543dc5345961d72cf6a4684a1069013ed6da))
+* **Schema:** Add Student schema ([d320bf7](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/d320bf79fdff607f8f9a92e1ae57492c18c3d38c))
+* **Schema:** Add User schema ([2ce1327](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/2ce13279d0fc1f8d1f9e79d79dda1a9c2b28dd88))
+* **Schema:** Middleware to validate the data scheme ([33fcdd0](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/33fcdd032ae6bbff3611c3a12826290e3258be77))
+* **Utils:** Successful response template with proper formatting. ([83dbd3b](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/83dbd3bd6f700b7da714066b000255159503dd14))
+
 ## [1.0.3](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.2...v1.0.3) (2025-05-12)
 
 
