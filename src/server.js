@@ -3,7 +3,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import morgan from 'morgan';
 import sequelize from './database/database.js';
-import { Carreras } from './models/index.js';
+import { Carreras, Asesores, Proyectos, Estudiantes, FechaAsesoria, Usuario } from './models/index.js';
 
 
 
@@ -24,8 +24,6 @@ class Server {
         this.app.use(cookieParser())
     }
 
-
-
     async connectDB(){
         try {
             await sequelize.authenticate()
@@ -34,7 +32,17 @@ class Server {
             //Synchronize the models with the DB
             sequelize.sync();
 
-           
+            //Relationships between models
+            Proyectos.belongsTo(Asesores, { foreignKey: "id_asesor"});
+            Asesores.hasMany(Proyectos, { foreignKey: "id_asesor" });
+            Estudiantes.belongsTo(Proyectos, {foreignKey: "id_proyecto"});
+            Proyectos.hasMany(Estudiantes, {foreignKey: "id_proyecto"});
+            Estudiantes.belongsTo(Carreras, {foreignKey: "id_carrera"});
+            Carreras.hasMany(Estudiantes, {foreignKey: "id_carrera"});
+            FechaAsesoria.belongsTo(Proyectos, { foreignKey: "id_proyecto" });
+            Proyectos.hasMany(FechaAsesoria, { foreignKey: "id_proyecto" });
+            FechaAsesoria.belongsTo(Asesores, {as: "asesor", foreignKey: "id_asesor" });
+            Asesores.hasMany(FechaAsesoria, { foreignKey: "id_asesor" });
         } catch (error) {
             console.error("Could not connect to the DB because of the error:", error.message);
         }
