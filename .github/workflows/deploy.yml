@@ -12,7 +12,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Clonar repositorio
         uses: actions/checkout@v3
@@ -25,29 +24,23 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
-      # - name: Ejecutar pruebas ## Todavia no hay pruebas
+      # - name: Ejecutar pruebas
       #   run: npm test
 
-  merge:
+  pull-request:
     needs: test
     runs-on: ubuntu-latest
     if: success()
-
     steps:
-      - name: Merge de developer a main
-        uses: devmasx/merge-branch@v1.3.0
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Crear Pull Request a main
+        uses: peter-evans/create-pull-request@v5
         with:
-          type: now
-          from_branch: developer
-          target_branch: main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
-  deploy:
-    needs: merge
-    runs-on: ubuntu-latest
-    if: success()
-
-    steps:
-      - name: Hacer deploy a Render
-        run: curl -X GET ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+          token: ${{ secrets.GH_TOKEN }}
+          base: main
+          branch: developer
+          title: "Merge automático de developer a main"
+          body: "Este PR fue generado automáticamente por el flujo de trabajo CI/CD."
+          draft: false
