@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.6...v1.0.7) (2025-05-12)
+
+
+### Features
+
+* **Server:** add variables env for origins allows ([95a887a](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/95a887a98a50e035d2118acdf337d2a4e76ad6bb))
+
 ## [1.0.6](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.5...v1.0.6) (2025-05-12)
 
 
