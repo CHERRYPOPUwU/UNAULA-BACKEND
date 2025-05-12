@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.5](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.4...v1.0.5) (2025-05-12)
+
+
+### Features
+
+* **Controller:** Add Asesor controller with methods (getAllAsesores,getAsesor,createAsesor,updateAsesor) ([70af6b3](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/70af6b3d9b414eda8e9c0a3acc128c177332020d))
+* **Controller:** Add carrera controller with methods (getAllCarreras,getCarrera,createCarrera,updateCarrera) ([24f97a9](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/24f97a975521aebac5e7c4ff9bea84e9e443388b))
+* **Controller:** Add Estudiante controller with methods (getAllEstudiantes,getEstudiante,createEstudiante,updateEstudiante) ([4e71642](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/4e716426f05ff0fcb1b0c188e1d1bd7853ee145d))
+* **Controller:** Add fecha Asesoria controller with methods (getAllFechaAsesoria,createFechaAsesoria,updateFechaAsesoria) ([6e6ecd3](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/6e6ecd3834d8d2dc5983a2c46dd44fb16ddc00ea))
+* **Controller:** Add Informes controller with methods (generateProjectReport) ([bba7db7](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/bba7db72ec5a0169210336fda5a82fcc50cce05e))
+* **Controller:** Add projects controller with methods (getAllProjects,getProject,getAllIncompletProject,createProject,updateProject) ([b8d2b10](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/b8d2b107672bd4915fa4fc783c6278d7e0391c9e))
+* **Controller:** Add Users controller with methods (login,createUser) ([eb8f54c](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/eb8f54cc358a88109be825d9395f8a7c4ac20a1b))
+
 ## [1.0.4](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.3...v1.0.4) (2025-05-12)
 
 
