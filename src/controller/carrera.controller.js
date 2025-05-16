@@ -110,7 +110,7 @@ export const updateCarrera = async (req, res, next) => {
         if(updateCarrera == null) return res.status(404).json({message:"This race is not found in the database, try another race."})
 
         updateCarrera.nombre = nombre;
-        updateCarrera.semestre = semestres; 
+        updateCarrera.semestres = semestres; 
         updateCarrera.facultad = facultad;
 
         updateCarrera.save();

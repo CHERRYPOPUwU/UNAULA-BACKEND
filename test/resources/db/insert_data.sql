@@ -17,9 +17,9 @@ VALUES
 -- Insertar datos en la tabla de Proyectos
 INSERT INTO proyectos (nombre, tipo, tema, estado, id_asesor)
 VALUES 
-    ('Sistema de Gestión de Proyectos', 'Tesis', 'Desarrollo de un sistema para gestión de proyectos', 'En Progreso', 1),
-    ('Análisis de Riesgos Legales', 'Investigación', 'Estudio de riesgos en derecho corporativo', 'Completado', 2),
-    ('Plan de Negocios para Startup', 'Plan de Negocios', 'Desarrollo de un plan de negocios para una nueva startup', 'En Progreso', 3);
+    ('Sistema de Gestión de Proyectos', 'Tesis', 'Desarrollo de un sistema para gestión de proyectos', 'Aprobado', 1),
+    ('Análisis de Riesgos Legales', 'Investigación', 'Estudio de riesgos en derecho corporativo', 'En proceso', 2),
+    ('Plan de Negocios para Startup', 'Plan de Negocios', 'Desarrollo de un plan de negocios para una nueva startup', 'Aprobado', 3);
 
 -- Insertar datos en la tabla de Estudiantes
 INSERT INTO estudiantes (nombre, apellidos, edad, matriculado, celular, id_proyecto, id_carrera)
