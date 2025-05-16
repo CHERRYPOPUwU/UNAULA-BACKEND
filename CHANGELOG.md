@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.9](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.8...v1.0.9) (2025-05-16)
+
+
+### Bug Fixes
+
+* **Routes:** fix career routes ([ae45450](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/ae454502f2dcc1545168890ce2394f285568a7c1))
+* **Test:** change data to create when the app run ([cc6e4c1](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/commit/cc6e4c19560e60e32440c21211d62a9ebf88dadb))
+
 ## [1.0.8](https://github.com/CHERRYPOPUwU/UNAULA-BACKEND/compare/v1.0.7...v1.0.8) (2025-05-12)
 
 
